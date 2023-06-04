@@ -2,6 +2,7 @@
   "extends": "@eggjs/tsconfig",
   "compilerOptions": {
     "declaration": false,
+    "experimentalDecorators": true,
     "paths": {
       "@/module/*": ["app/module/*"]
     },
