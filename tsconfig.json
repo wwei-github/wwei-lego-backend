@@ -6,5 +6,6 @@
       "@/module/*": ["app/module/*"]
     },
     "baseUrl": "."
-  }
+  },
+  "exclude": ["node_modules", "test"]
 }
