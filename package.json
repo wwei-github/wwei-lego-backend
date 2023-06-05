@@ -31,13 +31,16 @@
     "egg-tracer": "^2.0.0"
   },
   "devDependencies": {
+    "@eggjs/tsconfig": "1",
     "@types/mocha": "10",
     "@types/node": "18",
-    "@eggjs/tsconfig": "1",
     "egg-bin": "6",
     "egg-mock": "5",
     "eslint": "8",
     "eslint-config-egg": "12",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
     "typescript": "4"
   },
   "engines": {
