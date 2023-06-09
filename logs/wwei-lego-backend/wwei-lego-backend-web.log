@@ -1,0 +1,15 @@
+2023-06-09 23:05:59,343 ERROR 84841 [-/127.0.0.1/-/2ms GET /users] nodejs.OverwriteModelError: Cannot overwrite `Users` model once compiled.
+    at NativeConnection.Connection.model (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/mongoose@7.2.2/node_modules/mongoose/lib/connection.js:1251:13)
+    at UsersService.queryUsers (/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts:12:37)
+    at UsersController.list (/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts:7:52)
+    at Object.callFn (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+
+pid: 84841
+hostname: wangweideMacBook-Pro.local
+

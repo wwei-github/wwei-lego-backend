@@ -13,11 +13,14 @@ export default (appInfo: EggAppInfo) => {
   // add your special config in here
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
+    mongoose: {
+      url: 'mongodb://wwei:ww13030370329@118.89.84.196:27017/wwei-lego-database?authMechanism=DEFAULT&authSource=wwei-lego-database',
+    },
   };
 
   // the return config will combines to EggAppConfig
   return {
-    ...config,
+    ...(config as {}),
     ...bizConfig,
   };
 };
