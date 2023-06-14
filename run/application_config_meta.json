@@ -1,23 +1,9 @@
 {
   "keys": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
   "middleware": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
-  "sourceUrl": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
-  "mongoose": {
-    "url": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts"
-  },
-  "session": {
-    "maxAge": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
-    "key": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
-    "httpOnly": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
-    "encrypt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
-    "logValue": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js"
-  },
   "security": {
-    "domainWhiteList": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
-    "protocolWhiteList": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
-    "defaultMiddleware": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
     "csrf": {
-      "enable": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+      "enable": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
       "type": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
       "useSession": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
@@ -29,6 +15,9 @@
       "supportedRequests": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
       "refererWhiteList": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
     },
+    "domainWhiteList": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+    "protocolWhiteList": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
     "xframe": {
       "enable": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
       "value": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
@@ -67,6 +56,35 @@
       "ipExceptionList": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js",
       "checkAddress": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
     }
+  },
+  "bcrypt": {
+    "saltRounds": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts"
+  },
+  "mongoose": {
+    "clients": {
+      "mongodb_1": {
+        "url": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+        "options": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts"
+      }
+    },
+    "url": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js",
+    "options": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js",
+    "plugins": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js",
+    "loadModel": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js",
+    "app": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js",
+    "agent": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-mongoose@3.3.1/node_modules/egg-mongoose/config/config.default.js"
+  },
+  "jwt": {
+    "secret": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+    "enable": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-jwt@3.1.7/node_modules/egg-jwt/config/config.default.js"
+  },
+  "sourceUrl": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+  "session": {
+    "maxAge": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "key": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js",
+    "logValue": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-session@3.3.0/node_modules/egg-session/config/config.default.js"
   },
   "helper": {
     "shtml": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/config/config.default.js"
@@ -163,6 +181,7 @@
     "lstripBlocks": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-view-nunjucks@2.3.0/node_modules/egg-view-nunjucks/config/config.default.js",
     "cache": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-view-nunjucks@2.3.0/node_modules/egg-view-nunjucks/config/config.local.js"
   },
+  "validate": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-validate@2.0.2/node_modules/egg-validate/config/config.default.js",
   "env": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
   "name": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
   "cookies": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
@@ -183,6 +202,7 @@
     "scripts": {
       "start": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "dev": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "ets": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "debug": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "test-local": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "test": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
@@ -194,25 +214,32 @@
     },
     "dependencies": {
       "egg": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-bcrypt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-jwt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-mongoose": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-validate": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-view-nunjucks": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "moment": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
-      "mongoose": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js"
+      "mongoose": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "mongoose-sequence": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
       "@eggjs/tsconfig": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "@types/cheerio": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "@types/jsonwebtoken": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "@types/mocha": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "cheerio": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-bin": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-mock": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-ts-helper": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "eslint": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "eslint-config-egg": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
-      "typescript": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "eslint-config-prettier": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "eslint-plugin-prettier": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "prettier": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
-      "egg-ts-helper": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js"
+      "typescript": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js"
     },
     "engines": {
       "node": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js"

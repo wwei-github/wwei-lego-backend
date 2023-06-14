@@ -1,0 +1,155 @@
+2023-06-13 21:32:14,484 ERROR 14576 [-/127.0.0.1/-/2ms GET /api/users] nodejs.TypeError: Cannot read properties of undefined (reading 'tokenSecret')
+    at getTokenValue (/Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:16:53)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:30:19
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 14576
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:32:15,870 ERROR 14576 [-/127.0.0.1/-/2ms GET /api/users] nodejs.TypeError: Cannot read properties of undefined (reading 'tokenSecret')
+    at getTokenValue (/Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:16:53)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:30:19
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 14576
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:32:50,719 ERROR 14658 [-/127.0.0.1/-/7ms GET /api/users] nodejs.TypeError: Cannot read properties of undefined (reading 'tokenSecret')
+    at getTokenValue (/Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:16:53)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:30:19
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 14658
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:33:29,189 ERROR 14736 [-/127.0.0.1/-/2ms GET /api/users] nodejs.TypeError: Cannot read properties of undefined (reading 'jwt')
+    at getTokenValue (/Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:16:53)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:30:19
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 14736
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:33:30,642 ERROR 14736 [-/127.0.0.1/-/1ms GET /api/users] nodejs.TypeError: Cannot read properties of undefined (reading 'jwt')
+    at getTokenValue (/Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:16:53)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/app/middleware/jwt.ts:30:19
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+
+pid: 14736
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:53:05,042 WARN 16334 [-/127.0.0.1/-/2ms GET /api/users] nodejs.UnauthorizedError: invalid token
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-jwt2@1.0.3/node_modules/koa-jwt2/lib/index.js:117:18
+    at Object.module.exports [as verify] (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/jsonwebtoken@8.5.1/node_modules/jsonwebtoken/verify.js:75:12)
+    at decoded (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-jwt2@1.0.3/node_modules/koa-jwt2/lib/index.js:115:11)
+    at new Promise (<anonymous>)
+    at middleware (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-jwt2@1.0.3/node_modules/koa-jwt2/lib/index.js:114:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-session@6.4.0/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-bodyparser@4.4.0/node_modules/koa-bodyparser/index.js:91:5)
+    at async /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-static-cache@5.1.4/node_modules/koa-static-cache/index.js:41:56
+    at async notfound (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/app/middleware/meta.js:12:5)
+name: "UnauthorizedError"
+message: "invalid token"
+code: "invalid_token"
+status: 401
+inner: {"name":"JsonWebTokenError","message":"invalid token"}
+pid: 16334
+hostname: wangweideMacBook-Pro.local
+
+2023-06-13 21:53:12,217 WARN 16334 [-/127.0.0.1/-/3ms GET /api/users] nodejs.UnauthorizedError: No authorization token was found
+    at middleware (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-jwt2@1.0.3/node_modules/koa-jwt2/lib/index.js:89:15)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:45:18)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:186:18
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:44:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@3.2.1/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/@eggjs+router@2.0.1/node_modules/@eggjs/router/lib/router.js:191:33)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:56
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at i18n (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-i18n@2.1.1/node_modules/egg-i18n/app/middleware/i18n.js:13:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at dta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/dta.js:12:12)
+    at dispatch (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-compose@4.1.0/node_modules/koa-compose/index.js:42:32)
+    at xframe (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/xframe.js:7:11)
+name: "UnauthorizedError"
+message: "No authorization token was found"
+code: "credentials_required"
+status: 401
+inner: {"message":"No authorization token was found"}
+pid: 16334
+hostname: wangweideMacBook-Pro.local
+

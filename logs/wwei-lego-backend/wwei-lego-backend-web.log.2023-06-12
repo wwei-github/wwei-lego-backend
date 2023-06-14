@@ -1,0 +1,18 @@
+2023-06-12 22:42:35,008 ERROR 636 [-/127.0.0.1/-/153ms POST /api/users/login] nodejs.Error: Cannot send secure cookie over unencrypted connection
+    at Cookies.set (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-cookies@2.6.1/node_modules/egg-cookies/lib/cookies.js:98:13)
+    at UsersController.login (/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts:77:19)
+    at async /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-development@2.7.0/node_modules/egg-development/app/middleware/egg_loader_trace.js:9:50
+    at async xframe (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+    at async xssProtection (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/xssProtection.js:7:5)
+    at async nosniff (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/nosniff.js:8:5)
+    at async noopen (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-security@2.11.0/node_modules/egg-security/lib/middlewares/noopen.js:8:5)
+    at async session (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-session@6.4.0/node_modules/koa-session/index.js:41:7)
+    at async bodyParser (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-bodyparser@4.4.0/node_modules/koa-bodyparser/index.js:91:5)
+    at async /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa-static-cache@5.1.4/node_modules/koa-static-cache/index.js:39:63
+    at async notfound (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/app/middleware/notfound.js:5:5)
+    at async meta (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/app/middleware/meta.js:12:5)
+    at async /Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/koa@2.14.2/node_modules/koa/lib/application.js:160:16
+
+pid: 636
+hostname: wangweideMacBook-Pro.local
+

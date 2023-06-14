@@ -1,7 +1,17 @@
 import 'egg';
-import { Connection } from 'mongoose';
+import { Model } from 'mongoose';
+
 declare module 'egg' {
-  interface Application {
-    mongoose: Connection;
+  interface MongooseModels extends IModel {
+    [key: string]: Model<any>;
+  }
+  interface EggAppConfig {
+    bcrypt?: {
+      saltRounds: number;
+    };
+  }
+  interface Context {
+    genHash: (plainText: string) => Promise<string>;
+    compare: (plainText: string, hash: string) => Promise<string>;
   }
 }

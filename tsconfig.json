@@ -1,7 +1,9 @@
 {
   "extends": "@eggjs/tsconfig",
   "compilerOptions": {
-    "declaration": false
+    "declaration": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "exclude": [
     "app/public",

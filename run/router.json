@@ -3,45 +3,13 @@
     "name": null,
     "methods": [
       "HEAD",
-      "ACL",
-      "BIND",
-      "CHECKOUT",
-      "CONNECT",
-      "COPY",
-      "DELETE",
-      "GET",
-      "HEAD",
-      "LINK",
-      "LOCK",
-      "M-SEARCH",
-      "MERGE",
-      "MKACTIVITY",
-      "MKCALENDAR",
-      "MKCOL",
-      "MOVE",
-      "NOTIFY",
-      "OPTIONS",
-      "PATCH",
-      "POST",
-      "PROPFIND",
-      "PROPPATCH",
-      "PURGE",
-      "PUT",
-      "REBIND",
-      "REPORT",
-      "SEARCH",
-      "SOURCE",
-      "SUBSCRIBE",
-      "TRACE",
-      "UNBIND",
-      "UNLINK",
-      "UNLOCK",
-      "UNSUBSCRIBE"
+      "GET"
     ],
     "paramNames": [],
-    "path": "/",
-    "regexp": "/^(?:\\/(?=$))?$/",
+    "path": "/api/users",
+    "regexp": "/^\\/api\\/users(?:\\/(?=$))?$/",
     "stack": [
+      "middleware",
       "wrappedController"
     ]
   },
@@ -51,9 +19,44 @@
       "HEAD",
       "GET"
     ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/users/:id",
+    "regexp": "/^\\/api\\/users\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
     "paramNames": [],
-    "path": "/users",
-    "regexp": "/^\\/users(?:\\/(?=$))?$/",
+    "path": "/api/users/create",
+    "regexp": "/^\\/api\\/users\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/users/login",
+    "regexp": "/^\\/api\\/users\\/login(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

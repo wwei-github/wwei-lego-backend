@@ -1,110 +1,361 @@
-2023-06-09 22:50:22,649 INFO 82755 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:50:22,653 INFO 82755 [egg:core] dump config after load, 2ms
-2023-06-09 22:50:22,674 INFO 82755 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:50:22,674 INFO 82755 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:50:22,674 INFO 82755 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:50:22,675 INFO 82755 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:50:22,675 INFO 82755 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:50:22,675 INFO 82755 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:50:22,675 INFO 82755 [egg-watcher:agent] watcher start success
-2023-06-09 22:50:22,684 INFO 82755 [egg:core] dump config after ready, 2ms
-2023-06-09 22:51:12,297 WARN 82755 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts change
-2023-06-09 22:51:12,095 INFO 82755 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":407,"blocks":8,"atimeMs":1686322272064.3672,"mtimeMs":1686322272032.6746,"ctimeMs":1686322272032.6746,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:51:12.064Z","mtime":"2023-06-09T14:51:12.033Z","ctime":"2023-06-09T14:51:12.033Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:53:22,763 INFO 83120 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:53:22,766 INFO 83120 [egg:core] dump config after load, 2ms
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:53:22,785 INFO 83120 [egg-watcher:agent] watcher start success
-2023-06-09 22:53:22,795 INFO 83120 [egg:core] dump config after ready, 3ms
-2023-06-09 22:54:07,177 WARN 83120 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts change
-2023-06-09 22:54:06,975 INFO 83120 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":408,"blocks":8,"atimeMs":1686322446944.4668,"mtimeMs":1686322446917.6663,"ctimeMs":1686322446917.6663,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:54:06.944Z","mtime":"2023-06-09T14:54:06.918Z","ctime":"2023-06-09T14:54:06.918Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:54:50,718 WARN 83120 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/router.ts change
-2023-06-09 22:54:50,516 INFO 83120 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/router.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453341,"size":207,"blocks":8,"atimeMs":1686322490487.7495,"mtimeMs":1686322490450.9219,"ctimeMs":1686322490450.9219,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:54:50.488Z","mtime":"2023-06-09T14:54:50.451Z","ctime":"2023-06-09T14:54:50.451Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:55:38,078 INFO 83434 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:55:38,085 INFO 83434 [egg:core] dump config after load, 5ms
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:55:38,106 INFO 83434 [egg-watcher:agent] watcher start success
-2023-06-09 22:55:38,119 INFO 83434 [egg:core] dump config after ready, 2ms
-2023-06-09 22:55:57,577 INFO 83502 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:55:57,581 INFO 83502 [egg:core] dump config after load, 2ms
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:55:57,601 INFO 83502 [egg-watcher:agent] watcher start success
-2023-06-09 22:55:57,611 INFO 83502 [egg:core] dump config after ready, 3ms
-2023-06-09 22:56:09,097 INFO 83557 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:56:09,100 INFO 83557 [egg:core] dump config after load, 2ms
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:56:09,119 INFO 83557 [egg-watcher:agent] watcher start success
-2023-06-09 22:56:09,128 INFO 83557 [egg:core] dump config after ready, 3ms
-2023-06-09 22:57:13,053 INFO 83687 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:57:13,056 INFO 83687 [egg:core] dump config after load, 2ms
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:57:13,077 INFO 83687 [egg-watcher:agent] watcher start success
-2023-06-09 22:57:13,085 INFO 83687 [egg:core] dump config after ready, 3ms
-2023-06-09 22:57:35,909 INFO 83746 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{"enabled":false}}
-2023-06-09 22:57:35,914 INFO 83746 [egg:core] dump config after load, 3ms
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: ["/Users/wwei/Documents/my_github/wwei-lego-backend/app","/Users/wwei/Documents/my_github/wwei-lego-backend/config","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks","/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy","/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"]
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app"
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/config"
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks"
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/mocks_proxy"
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher] Start watching: "/Users/wwei/Documents/my_github/wwei-lego-backend/app.js"
-2023-06-09 22:57:35,937 INFO 83746 [egg-watcher:agent] watcher start success
-2023-06-09 22:57:35,945 INFO 83746 [egg:core] dump config after ready, 3ms
-2023-06-09 22:58:37,779 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/router.ts change
-2023-06-09 22:58:37,569 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/router.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453341,"size":208,"blocks":8,"atimeMs":1686322717536.4094,"mtimeMs":1686322717505.892,"ctimeMs":1686322717505.892,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:58:37.536Z","mtime":"2023-06-09T14:58:37.506Z","ctime":"2023-06-09T14:58:37.506Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:02,642 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts change
-2023-06-09 22:59:02,441 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":430,"blocks":8,"atimeMs":1686322742401.4622,"mtimeMs":1686322742376.0828,"ctimeMs":1686322742376.0828,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:59:02.401Z","mtime":"2023-06-09T14:59:02.376Z","ctime":"2023-06-09T14:59:02.376Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:23,995 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts change
-2023-06-09 22:59:23,793 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":415,"blocks":8,"atimeMs":1686322763764.0488,"mtimeMs":1686322763730.974,"ctimeMs":1686322763730.974,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:59:23.764Z","mtime":"2023-06-09T14:59:23.731Z","ctime":"2023-06-09T14:59:23.731Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:40,866 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/UsersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":257,"blocks":8,"atimeMs":1686321821019.3555,"mtimeMs":1686321819630.4832,"ctimeMs":1686322780803.9219,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:43:41.019Z","mtime":"2023-06-09T14:43:39.630Z","ctime":"2023-06-09T14:59:40.804Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:40,866 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":257,"blocks":8,"atimeMs":1686321821019.3555,"mtimeMs":1686321819630.4832,"ctimeMs":1686322780803.9219,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:43:41.019Z","mtime":"2023-06-09T14:43:39.630Z","ctime":"2023-06-09T14:59:40.804Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:41,067 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts rename
-2023-06-09 22:59:48,310 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts rename
-2023-06-09 22:59:48,109 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":415,"blocks":8,"atimeMs":1686322765643.9307,"mtimeMs":1686322763730.974,"ctimeMs":1686322788096.6912,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:59:25.644Z","mtime":"2023-06-09T14:59:23.731Z","ctime":"2023-06-09T14:59:48.097Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 22:59:48,109 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/UsersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":415,"blocks":8,"atimeMs":1686322765643.9307,"mtimeMs":1686322763730.974,"ctimeMs":1686322788096.6912,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:59:25.644Z","mtime":"2023-06-09T14:59:23.731Z","ctime":"2023-06-09T14:59:48.097Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:00:19,074 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":259,"blocks":8,"atimeMs":1686322819048.3796,"mtimeMs":1686322819016.7988,"ctimeMs":1686322819016.7988,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:00:19.048Z","mtime":"2023-06-09T15:00:19.017Z","ctime":"2023-06-09T15:00:19.017Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:00:19,275 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:00:29,007 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts change
-2023-06-09 23:00:28,756 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":378,"blocks":8,"atimeMs":1686322765643.9307,"mtimeMs":1686322828743.883,"ctimeMs":1686322828743.883,"birthtimeMs":1677044870000,"atime":"2023-06-09T14:59:25.644Z","mtime":"2023-06-09T15:00:28.744Z","ctime":"2023-06-09T15:00:28.744Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:00:28,806 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":378,"blocks":8,"atimeMs":1686322828776.9775,"mtimeMs":1686322828743.883,"ctimeMs":1686322828743.883,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:00:28.777Z","mtime":"2023-06-09T15:00:28.744Z","ctime":"2023-06-09T15:00:28.744Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:01:12,385 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts change
-2023-06-09 23:01:12,184 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":386,"blocks":8,"atimeMs":1686322872159.9404,"mtimeMs":1686322872121.6519,"ctimeMs":1686322872121.6519,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:01:12.160Z","mtime":"2023-06-09T15:01:12.122Z","ctime":"2023-06-09T15:01:12.122Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:01:37,775 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts change
-2023-06-09 23:01:37,574 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":381,"blocks":8,"atimeMs":1686322897545.0286,"mtimeMs":1686322897511.3616,"ctimeMs":1686322897511.3616,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:01:37.545Z","mtime":"2023-06-09T15:01:37.511Z","ctime":"2023-06-09T15:01:37.511Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:01:42,165 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":343,"blocks":8,"atimeMs":1686322899139.689,"mtimeMs":1686322902152.6406,"ctimeMs":1686322902152.6406,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:01:39.140Z","mtime":"2023-06-09T15:01:42.153Z","ctime":"2023-06-09T15:01:42.153Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:01:42,417 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts change
-2023-06-09 23:01:42,215 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/controller/usersController.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453343,"size":343,"blocks":8,"atimeMs":1686322902180.433,"mtimeMs":1686322902152.6406,"ctimeMs":1686322902152.6406,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:01:42.180Z","mtime":"2023-06-09T15:01:42.153Z","ctime":"2023-06-09T15:01:42.153Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:02:33,832 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:02:33,629 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":325,"blocks":8,"atimeMs":1686322953600.2766,"mtimeMs":1686322953566.4292,"ctimeMs":1686322953566.4292,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:02:33.600Z","mtime":"2023-06-09T15:02:33.566Z","ctime":"2023-06-09T15:02:33.566Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:03:00,867 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:03:00,667 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":398,"blocks":8,"atimeMs":1686322980638.2842,"mtimeMs":1686322980605.2502,"ctimeMs":1686322980605.2502,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:03:00.638Z","mtime":"2023-06-09T15:03:00.605Z","ctime":"2023-06-09T15:03:00.605Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:03:25,983 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:03:25,782 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":448,"blocks":8,"atimeMs":1686323005757.1973,"mtimeMs":1686323005718.9395,"ctimeMs":1686323005718.9395,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:03:25.757Z","mtime":"2023-06-09T15:03:25.719Z","ctime":"2023-06-09T15:03:25.719Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:03:57,534 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:03:57,333 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":473,"blocks":8,"atimeMs":1686323037322.6,"mtimeMs":1686323037277.2969,"ctimeMs":1686323037277.2969,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:03:57.323Z","mtime":"2023-06-09T15:03:57.277Z","ctime":"2023-06-09T15:03:57.277Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
-2023-06-09 23:06:34,147 WARN 83746 [agent:development] reload worker because /Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts change
-2023-06-09 23:06:33,945 INFO 83746 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/Users/wwei/Documents/my_github/wwei-lego-backend/app/service/usersService.ts","stat":{"dev":16777230,"mode":33204,"nlink":1,"uid":501,"gid":20,"rdev":0,"blksize":4096,"ino":34453358,"size":507,"blocks":8,"atimeMs":1686323193916.7122,"mtimeMs":1686323193882.66,"ctimeMs":1686323193882.66,"birthtimeMs":1677044870000,"atime":"2023-06-09T15:06:33.917Z","mtime":"2023-06-09T15:06:33.883Z","ctime":"2023-06-09T15:06:33.883Z","birthtime":"2023-02-22T05:47:50.000Z"},"remove":false,"isDirectory":false,"isFile":true}
+2023-06-14 00:00:01,230 INFO 81226 [egg-logrotator] agent logger reload: got log-reload message
+2023-06-14 00:16:14,342 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 940851ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 00:33:44,906 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1050562ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 00:51:42,389 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1077478ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 01:08:04,193 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 981801ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 01:26:01,882 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1077534ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 01:43:09,200 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1027313ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 02:01:14,188 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1064980ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 02:18:45,747 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1051555ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 02:36:24,313 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1058563ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 02:52:35,900 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 971528ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 04:12:51,214 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 920793ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 04:29:25,872 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 994657ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 05:02:29,225 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 931725ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 05:18:16,833 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 947606ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 06:11:11,944 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1060628ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 06:42:02,225 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 942667ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 06:58:54,793 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1012565ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 07:33:07,239 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 980803ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 07:49:57,888 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1010647ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 08:25:06,242 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1075659ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 08:42:15,915 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1029670ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 09:14:21,254 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 914817ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 09:32:53,347 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1052085ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 09:48:57,243 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 963893ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 10:06:00,817 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1023570ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 10:36:24,257 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 921786ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 11:42:15,275 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1035007ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 11:58:21,811 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 966514ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 12:30:07,027 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 913654ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 13:16:56,805 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 974526ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 13:48:37,975 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 933648ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 14:22:09,287 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 991724ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 15:12:17,286 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1069741ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 15:30:05,872 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1068584ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 16:02:12,305 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 909805ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 16:51:41,309 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 920637ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 17:08:07,918 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 986605ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 17:40:27,296 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 939689ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 17:57:01,864 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 994567ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 18:30:10,318 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 1067769ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 18:46:46,841 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 996516ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 19:20:11,007 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 995551ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 19:53:08,330 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 913781ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 20:09:23,946 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 975612ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+
+2023-06-14 20:38:08,508 ERROR 81226 nodejs.ClusterClientNoResponseError: client no response in 819942ms exceeding maxIdleTime 60000ms, maybe the connection is close on other side.
+    at Timeout._onTimeout (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/cluster-client@3.4.0/node_modules/cluster-client/lib/leader.js:79:25)
+    at listOnTimeout (node:internal/timers:564:17)
+    at processTimers (node:internal/timers:507:7)
+name: "ClusterClientNoResponseError"
+pid: 81226
+hostname: wangweideMacBook-Pro.local
+

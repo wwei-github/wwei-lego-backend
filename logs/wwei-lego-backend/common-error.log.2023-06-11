@@ -1,0 +1,138 @@
+2023-06-11 21:17:52,316 ERROR 79889 [-/127.0.0.1/-/4ms POST /api/users/login] [
+  { message: 'required', field: 'username', code: 'missing_field' },
+  { message: 'required', field: 'password', code: 'missing_field' }
+]
+2023-06-11 21:17:53,701 ERROR 79889 [-/127.0.0.1/-/2ms POST /api/users/login] [
+  { message: 'required', field: 'username', code: 'missing_field' },
+  { message: 'required', field: 'password', code: 'missing_field' }
+]
+2023-06-11 21:17:54,536 ERROR 79889 [-/127.0.0.1/-/1ms POST /api/users/login] [
+  { message: 'required', field: 'username', code: 'missing_field' },
+  { message: 'required', field: 'password', code: 'missing_field' }
+]
+2023-06-11 21:19:04,739 ERROR 79984 [-/127.0.0.1/-/16ms POST /api/users/login] {}
+2023-06-11 21:19:38,965 ERROR 79984 [-/127.0.0.1/-/22ms POST /api/users/login] { username: '222222@qq.com', password: '12345678' }
+2023-06-11 21:27:02,111 ERROR 80581 [-/127.0.0.1/-/0ms GET /] nodejs.TSError: [egg-core] load file: /Users/wwei/Documents/my_github/wwei-lego-backend/app/model/Users.ts, error: ⨯ Unable to compile TypeScript:
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+    at createTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.loadFile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/utils/index.js:27:19)
+    at getExports (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:199:23)
+    at FileLoader.parse (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/egg_loader.js:399:25)
+diagnosticCodes: [6133]
+pid: 80581
+hostname: wangweideMacBook-Pro.local
+
+2023-06-11 21:27:26,619 ERROR 80642 [-/127.0.0.1/-/0ms GET /] nodejs.TSError: [egg-core] load file: /Users/wwei/Documents/my_github/wwei-lego-backend/app/model/Users.ts, error: ⨯ Unable to compile TypeScript:
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+    at createTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.loadFile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/utils/index.js:27:19)
+    at getExports (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:199:23)
+    at FileLoader.parse (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/egg_loader.js:399:25)
+diagnosticCodes: [6133]
+pid: 80642
+hostname: wangweideMacBook-Pro.local
+
+2023-06-11 21:31:13,997 ERROR 81023 [-/127.0.0.1/-/0ms GET /] nodejs.TSError: [egg-core] load file: /Users/wwei/Documents/my_github/wwei-lego-backend/app/model/Users.ts, error: ⨯ Unable to compile TypeScript:
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+[96mapp/model/Users.ts[0m:[93m33[0m:[93m21[0m - [91merror[0m[90m TS6133: [0m'doc' is declared but its value is never read.
+
+[7m33[0m         transform: (doc, res) => {
+[7m  [0m [91m                    ~~~[0m
+
+    at createTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.loadFile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/utils/index.js:27:19)
+    at getExports (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:199:23)
+    at FileLoader.parse (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/egg_loader.js:399:25)
+diagnosticCodes: [6133]
+pid: 81023
+hostname: wangweideMacBook-Pro.local
+
+2023-06-11 21:49:03,104 ERROR 82175 [-/127.0.0.1/-/0ms GET /] nodejs.TSError: [egg-core] load file: /Users/wwei/Documents/my_github/wwei-lego-backend/app/model/Users.ts, error: ⨯ Unable to compile TypeScript:
+[96mapp/model/Users.ts[0m:[93m3[0m:[93m35[0m - [91merror[0m[90m TS1141: [0mString literal expected.
+
+[7m3[0m import  AutoIncrementFactory from ('mongoose-sequence');
+[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96mapp/model/Users.ts[0m:[93m3[0m:[93m35[0m - [91merror[0m[90m TS1141: [0mString literal expected.
+
+[7m3[0m import  AutoIncrementFactory from ('mongoose-sequence');
+[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~[0m
+
+    at createTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Object.require.extensions.<computed> [as .ts] (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/ts-node@10.9.1_@types+node@20.2.5_typescript@4.9.4/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:878:12)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.loadFile (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/utils/index.js:27:19)
+    at getExports (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:199:23)
+    at FileLoader.parse (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:158:25)
+    at FileLoader.load (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/file_loader.js:67:24)
+    at AppWorkerLoader.loadToApp (/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-core@5.3.1/node_modules/egg-core/lib/loader/egg_loader.js:399:25)
+diagnosticCodes: [1141]
+pid: 82175
+hostname: wangweideMacBook-Pro.local
+

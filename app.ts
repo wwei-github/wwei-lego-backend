@@ -1,22 +1,10 @@
 // app.ts
-import assert from 'assert';
-import { Application, IBoot } from 'egg';
-import { createConnection, Connection } from 'mongoose';
+import { IBoot } from 'egg';
 
 export default class FooBoot implements IBoot {
-  private readonly app: Application;
-  mongoose: Connection;
-
-  constructor(app: Application) {
-    this.app = app;
-    const { url } = this.app.config.mongoose;
-    assert(url, '[egg-mongoose] url is required on config');
-    const db = createConnection(url);
-    db.on('connection', () => {
-      app.logger.info('[egg-mongoose] connection successfully');
-    });
-    app.mongoose = db;
-  }
+  // constructor(app: Application) {
+  //   this.app = app;
+  // }
 
   configWillLoad() {
     // Ready to call configDidLoad,

@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportUsersController from '../../../app/controller/UsersController';
+import ExportUsersController from '../../../app/controller/usersController';
 
 declare module 'egg' {
   interface IController {

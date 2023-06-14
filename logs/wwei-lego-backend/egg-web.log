@@ -1,140 +1,80 @@
-2023-06-09 22:50:23,824 INFO 82759 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:50:23,824 INFO 82759 [egg-multipart] stream mode enable
-2023-06-09 22:50:23,878 INFO 82759 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:50:23,880 INFO 82759 [egg-security] use csrf middleware
-2023-06-09 22:50:23,880 INFO 82759 [egg-security] use methodnoallow middleware
-2023-06-09 22:50:23,880 INFO 82759 [egg-security] use noopen middleware
-2023-06-09 22:50:23,881 INFO 82759 [egg-security] use nosniff middleware
-2023-06-09 22:50:23,881 INFO 82759 [egg-security] use xssProtection middleware
-2023-06-09 22:50:23,881 INFO 82759 [egg-security] use xframe middleware
-2023-06-09 22:50:23,882 INFO 82759 [egg-security] use dta middleware
-2023-06-09 22:50:23,882 INFO 82759 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:50:23,902 INFO 82759 [egg:core] dump config after load, 2ms
-2023-06-09 22:50:23,912 INFO 82759 [egg-watcher:application] watcher start success
-2023-06-09 22:50:23,915 INFO 82759 [egg:core] dump config after ready, 2ms
-2023-06-09 22:53:23,994 INFO 83123 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:53:23,994 INFO 83123 [egg-multipart] stream mode enable
-2023-06-09 22:53:24,051 INFO 83123 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:53:24,053 INFO 83123 [egg-security] use csrf middleware
-2023-06-09 22:53:24,053 INFO 83123 [egg-security] use methodnoallow middleware
-2023-06-09 22:53:24,054 INFO 83123 [egg-security] use noopen middleware
-2023-06-09 22:53:24,054 INFO 83123 [egg-security] use nosniff middleware
-2023-06-09 22:53:24,054 INFO 83123 [egg-security] use xssProtection middleware
-2023-06-09 22:53:24,055 INFO 83123 [egg-security] use xframe middleware
-2023-06-09 22:53:24,055 INFO 83123 [egg-security] use dta middleware
-2023-06-09 22:53:24,055 INFO 83123 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:53:24,076 INFO 83123 [egg:core] dump config after load, 2ms
-2023-06-09 22:53:24,084 INFO 83123 [egg-watcher:application] watcher start success
-2023-06-09 22:53:24,088 INFO 83123 [egg:core] dump config after ready, 2ms
-2023-06-09 22:54:08,698 INFO 83223 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:54:08,698 INFO 83223 [egg-multipart] stream mode enable
-2023-06-09 22:54:08,756 INFO 83223 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:54:08,757 INFO 83223 [egg-security] use csrf middleware
-2023-06-09 22:54:08,758 INFO 83223 [egg-security] use methodnoallow middleware
-2023-06-09 22:54:08,758 INFO 83223 [egg-security] use noopen middleware
-2023-06-09 22:54:08,758 INFO 83223 [egg-security] use nosniff middleware
-2023-06-09 22:54:08,759 INFO 83223 [egg-security] use xssProtection middleware
-2023-06-09 22:54:08,759 INFO 83223 [egg-security] use xframe middleware
-2023-06-09 22:54:08,759 INFO 83223 [egg-security] use dta middleware
-2023-06-09 22:54:08,759 INFO 83223 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:54:08,780 INFO 83223 [egg:core] dump config after load, 3ms
-2023-06-09 22:54:08,794 INFO 83223 [egg-watcher:application] watcher start success
-2023-06-09 22:54:08,797 INFO 83223 [egg:core] dump config after ready, 2ms
-2023-06-09 22:57:37,124 INFO 83751 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:57:37,124 INFO 83751 [egg-multipart] stream mode enable
-2023-06-09 22:57:37,180 INFO 83751 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:57:37,181 INFO 83751 [egg-security] use csrf middleware
-2023-06-09 22:57:37,181 INFO 83751 [egg-security] use methodnoallow middleware
-2023-06-09 22:57:37,182 INFO 83751 [egg-security] use noopen middleware
-2023-06-09 22:57:37,182 INFO 83751 [egg-security] use nosniff middleware
-2023-06-09 22:57:37,182 INFO 83751 [egg-security] use xssProtection middleware
-2023-06-09 22:57:37,182 INFO 83751 [egg-security] use xframe middleware
-2023-06-09 22:57:37,183 INFO 83751 [egg-security] use dta middleware
-2023-06-09 22:57:37,183 INFO 83751 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:57:37,205 INFO 83751 [egg:core] dump config after load, 3ms
-2023-06-09 22:57:37,214 INFO 83751 [egg-watcher:application] watcher start success
-2023-06-09 22:57:37,217 INFO 83751 [egg:core] dump config after ready, 2ms
-2023-06-09 22:58:39,107 INFO 84010 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:58:39,107 INFO 84010 [egg-multipart] stream mode enable
-2023-06-09 22:58:39,160 INFO 84010 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:58:39,161 INFO 84010 [egg-security] use csrf middleware
-2023-06-09 22:58:39,162 INFO 84010 [egg-security] use methodnoallow middleware
-2023-06-09 22:58:39,162 INFO 84010 [egg-security] use noopen middleware
-2023-06-09 22:58:39,162 INFO 84010 [egg-security] use nosniff middleware
-2023-06-09 22:58:39,162 INFO 84010 [egg-security] use xssProtection middleware
-2023-06-09 22:58:39,163 INFO 84010 [egg-security] use xframe middleware
-2023-06-09 22:58:39,163 INFO 84010 [egg-security] use dta middleware
-2023-06-09 22:58:39,163 INFO 84010 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:58:39,181 INFO 84010 [egg:core] dump config after load, 2ms
-2023-06-09 22:58:39,188 INFO 84010 [egg-watcher:application] watcher start success
-2023-06-09 22:58:39,191 INFO 84010 [egg:core] dump config after ready, 2ms
-2023-06-09 22:59:04,057 INFO 84080 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 22:59:04,057 INFO 84080 [egg-multipart] stream mode enable
-2023-06-09 22:59:04,115 INFO 84080 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 22:59:04,116 INFO 84080 [egg-security] use csrf middleware
-2023-06-09 22:59:04,117 INFO 84080 [egg-security] use methodnoallow middleware
-2023-06-09 22:59:04,117 INFO 84080 [egg-security] use noopen middleware
-2023-06-09 22:59:04,118 INFO 84080 [egg-security] use nosniff middleware
-2023-06-09 22:59:04,118 INFO 84080 [egg-security] use xssProtection middleware
-2023-06-09 22:59:04,118 INFO 84080 [egg-security] use xframe middleware
-2023-06-09 22:59:04,119 INFO 84080 [egg-security] use dta middleware
-2023-06-09 22:59:04,119 INFO 84080 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 22:59:04,140 INFO 84080 [egg:core] dump config after load, 3ms
-2023-06-09 22:59:04,146 INFO 84080 [egg-watcher:application] watcher start success
-2023-06-09 22:59:04,149 INFO 84080 [egg:core] dump config after ready, 2ms
-2023-06-09 23:01:39,101 INFO 84470 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 23:01:39,101 INFO 84470 [egg-multipart] stream mode enable
-2023-06-09 23:01:39,162 INFO 84470 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 23:01:39,163 INFO 84470 [egg-security] use csrf middleware
-2023-06-09 23:01:39,164 INFO 84470 [egg-security] use methodnoallow middleware
-2023-06-09 23:01:39,164 INFO 84470 [egg-security] use noopen middleware
-2023-06-09 23:01:39,164 INFO 84470 [egg-security] use nosniff middleware
-2023-06-09 23:01:39,165 INFO 84470 [egg-security] use xssProtection middleware
-2023-06-09 23:01:39,165 INFO 84470 [egg-security] use xframe middleware
-2023-06-09 23:01:39,165 INFO 84470 [egg-security] use dta middleware
-2023-06-09 23:01:39,165 INFO 84470 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 23:01:39,188 INFO 84470 [egg:core] dump config after load, 2ms
-2023-06-09 23:01:39,194 INFO 84470 [egg-watcher:application] watcher start success
-2023-06-09 23:01:39,197 INFO 84470 [egg:core] dump config after ready, 1ms
-2023-06-09 23:01:43,623 INFO 84492 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 23:01:43,623 INFO 84492 [egg-multipart] stream mode enable
-2023-06-09 23:01:43,673 INFO 84492 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 23:01:43,674 INFO 84492 [egg-security] use csrf middleware
-2023-06-09 23:01:43,674 INFO 84492 [egg-security] use methodnoallow middleware
-2023-06-09 23:01:43,674 INFO 84492 [egg-security] use noopen middleware
-2023-06-09 23:01:43,675 INFO 84492 [egg-security] use nosniff middleware
-2023-06-09 23:01:43,675 INFO 84492 [egg-security] use xssProtection middleware
-2023-06-09 23:01:43,675 INFO 84492 [egg-security] use xframe middleware
-2023-06-09 23:01:43,675 INFO 84492 [egg-security] use dta middleware
-2023-06-09 23:01:43,675 INFO 84492 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 23:01:43,696 INFO 84492 [egg:core] dump config after load, 2ms
-2023-06-09 23:01:43,707 INFO 84492 [egg-watcher:application] watcher start success
-2023-06-09 23:01:43,710 INFO 84492 [egg:core] dump config after ready, 2ms
-2023-06-09 23:03:58,867 INFO 84841 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 23:03:58,867 INFO 84841 [egg-multipart] stream mode enable
-2023-06-09 23:03:59,448 INFO 84841 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 23:03:59,449 INFO 84841 [egg-security] use csrf middleware
-2023-06-09 23:03:59,450 INFO 84841 [egg-security] use methodnoallow middleware
-2023-06-09 23:03:59,450 INFO 84841 [egg-security] use noopen middleware
-2023-06-09 23:03:59,450 INFO 84841 [egg-security] use nosniff middleware
-2023-06-09 23:03:59,451 INFO 84841 [egg-security] use xssProtection middleware
-2023-06-09 23:03:59,451 INFO 84841 [egg-security] use xframe middleware
-2023-06-09 23:03:59,451 INFO 84841 [egg-security] use dta middleware
-2023-06-09 23:03:59,451 INFO 84841 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 23:03:59,466 INFO 84841 [egg:core] dump config after load, 2ms
-2023-06-09 23:03:59,474 INFO 84841 [egg-watcher:application] watcher start success
-2023-06-09 23:03:59,477 INFO 84841 [egg:core] dump config after ready, 2ms
-2023-06-09 23:06:35,532 INFO 85091 [egg:logger] init all loggers with options: {"dir":"/Users/wwei/Documents/my_github/wwei-lego-backend/logs/wwei-lego-backend","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"wwei-lego-backend-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"application","localStorage":{"enabled":false}}
-2023-06-09 23:06:35,532 INFO 85091 [egg-multipart] stream mode enable
-2023-06-09 23:06:36,071 INFO 85091 [egg-static] starting static serve /public/ -> /Users/wwei/Documents/my_github/wwei-lego-backend/app/public
-2023-06-09 23:06:36,072 INFO 85091 [egg-security] use csrf middleware
-2023-06-09 23:06:36,073 INFO 85091 [egg-security] use methodnoallow middleware
-2023-06-09 23:06:36,073 INFO 85091 [egg-security] use noopen middleware
-2023-06-09 23:06:36,075 INFO 85091 [egg-security] use nosniff middleware
-2023-06-09 23:06:36,075 INFO 85091 [egg-security] use xssProtection middleware
-2023-06-09 23:06:36,076 INFO 85091 [egg-security] use xframe middleware
-2023-06-09 23:06:36,076 INFO 85091 [egg-security] use dta middleware
-2023-06-09 23:06:36,076 INFO 85091 [egg-security] compose 7 middlewares into one security middleware
-2023-06-09 23:06:36,091 INFO 85091 [egg:core] dump config after load, 3ms
-2023-06-09 23:06:36,097 INFO 85091 [egg-watcher:application] watcher start success
-2023-06-09 23:06:36,100 INFO 85091 [egg:core] dump config after ready, 2ms
+2023-06-14 00:00:01,230 INFO 16904 [egg-logrotator] app logger reload: got log-reload message
+2023-06-14 00:16:14,200 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 00:33:44,908 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 00:51:42,389 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 01:08:04,196 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 01:08:04,196 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 01:26:01,882 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 01:26:01,882 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 01:43:09,199 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 02:01:14,186 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 02:01:14,186 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 02:18:45,747 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 02:18:45,748 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 02:36:24,368 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 02:36:24,369 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 02:52:35,900 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 02:52:35,900 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 04:12:51,214 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 04:12:51,214 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 04:29:25,872 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 04:29:25,872 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 04:46:57,507 INFO 16904 [-/127.0.0.1/-/2ms SCHEDULE /__schedule?path=/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] start clean tmpdir: "/var/folders/2t/2r_y1wpn1t911ffvn_wm9sb00000gn/T/egg-multipart-tmp/wwei-lego-backend"
+2023-06-14 04:46:57,513 INFO 16904 [-/127.0.0.1/-/8ms SCHEDULE /__schedule?path=/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-multipart@3.3.0/node_modules/egg-multipart/app/schedule/clean_tmpdir.js&type=worker&cron=0%2030%204%20*%20*%20*&disable=false&immediate=false] [egg-multipart:CleanTmpdir] end
+2023-06-14 05:02:29,224 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 05:02:29,225 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 05:18:16,833 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 05:18:16,833 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 06:11:11,944 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 06:11:11,944 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 06:42:02,225 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 06:42:02,225 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 06:58:54,793 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 06:58:54,793 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 07:33:07,236 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 07:33:07,237 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 07:49:57,888 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 08:25:06,241 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 08:25:06,242 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 08:42:15,914 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 08:42:15,915 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 09:14:21,254 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 09:14:21,254 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 09:32:53,348 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 09:48:57,243 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 09:48:57,243 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 10:06:00,817 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 10:36:24,257 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 10:36:24,258 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 11:42:15,272 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 11:58:21,809 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 11:58:21,809 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 12:30:07,027 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 12:30:07,027 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 13:16:56,805 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 13:48:37,975 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 13:48:37,975 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 14:22:09,286 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 14:22:09,286 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 15:12:17,286 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 15:12:17,286 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 15:30:05,873 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 16:02:12,305 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 16:02:12,305 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 16:51:41,307 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 17:08:07,918 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 17:40:27,296 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 17:57:01,864 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 17:57:01,864 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 18:30:10,318 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 18:30:10,318 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 18:46:46,839 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 18:46:46,840 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 19:20:11,007 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 19:20:11,007 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 19:53:08,330 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 19:53:08,330 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 20:09:23,946 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 20:09:23,947 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
+2023-06-14 20:38:08,508 WARN 16904 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2023-06-14 20:38:08,508 WARN 16904 [ClusterClient:Watcher] follower closed, and try to init it again
