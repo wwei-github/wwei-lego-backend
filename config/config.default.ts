@@ -21,6 +21,15 @@ export default (appInfo: EggAppInfo) => {
     saltRounds: 10,
   };
 
+  config.redis = {
+    client: {
+      port: 6379, // Redis port
+      host: '118.89.84.196', // Redis host
+      password: 'auth',
+      db: 0,
+    },
+  };
+
   config.mongoose = {
     clients: {
       mongodb_1: {

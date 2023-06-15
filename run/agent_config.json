@@ -193,6 +193,22 @@
     "bcrypt": {
       "saltRounds": 10
     },
+    "jwt": {
+      "secret": "<String len: 22>",
+      "enable": false
+    },
+    "redis": {
+      "default": {},
+      "app": true,
+      "agent": false,
+      "supportTimeCommand": true,
+      "client": {
+        "port": 6379,
+        "host": "118.89.84.196",
+        "password": "<String len: 4>",
+        "db": 0
+      }
+    },
     "env": "local",
     "name": "wwei-lego-backend",
     "keys": "<String len: 36>",
@@ -227,16 +243,21 @@
       "dependencies": {
         "egg": "^3.11.0",
         "egg-bcrypt": "^1.1.0",
+        "egg-jwt": "^3.1.7",
         "egg-mongoose": "^3.3.1",
+        "egg-redis": "^2.5.0",
         "egg-scripts": "^2.17.0",
         "egg-validate": "^2.0.2",
         "egg-view-nunjucks": "^2.3.0",
+        "jsonwebtoken": "^9.0.0",
         "moment": "^2.22.0",
-        "mongoose": "^7.2.2"
+        "mongoose": "^7.2.2",
+        "mongoose-sequence": "^5.3.1"
       },
       "devDependencies": {
         "@eggjs/tsconfig": "^1.1.0",
         "@types/cheerio": "^0.22.1",
+        "@types/jsonwebtoken": "^9.0.2",
         "@types/mocha": "^10.0.1",
         "cheerio": "^1.0.0-rc.2",
         "egg-bin": "^5.9.0",
@@ -358,7 +379,9 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
-    "middleware": [],
+    "middleware": [
+      "errorMiddleware"
+    ],
     "sourceUrl": "https://github.com/eggjs/examples/tree/master/wwei-lego-backend",
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",
@@ -569,6 +592,30 @@
       "from": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/plugin.ts",
       "path": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-bcrypt@1.1.0/node_modules/egg-bcrypt",
       "version": "1.1.0"
+    },
+    "jwt": {
+      "enable": true,
+      "package": "egg-jwt",
+      "name": "jwt",
+      "dependencies": [],
+      "optionalDependencies": [
+        "onerror"
+      ],
+      "env": [],
+      "from": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/plugin.ts",
+      "path": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-jwt@3.1.7/node_modules/egg-jwt",
+      "version": "3.1.7"
+    },
+    "redis": {
+      "enable": true,
+      "package": "egg-redis",
+      "name": "redis",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/plugin.ts",
+      "path": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-redis@2.5.0/node_modules/egg-redis",
+      "version": "2.5.0"
     }
   },
   "appInfo": {
@@ -601,16 +648,21 @@
       "dependencies": {
         "egg": "^3.11.0",
         "egg-bcrypt": "^1.1.0",
+        "egg-jwt": "^3.1.7",
         "egg-mongoose": "^3.3.1",
+        "egg-redis": "^2.5.0",
         "egg-scripts": "^2.17.0",
         "egg-validate": "^2.0.2",
         "egg-view-nunjucks": "^2.3.0",
+        "jsonwebtoken": "^9.0.0",
         "moment": "^2.22.0",
-        "mongoose": "^7.2.2"
+        "mongoose": "^7.2.2",
+        "mongoose-sequence": "^5.3.1"
       },
       "devDependencies": {
         "@eggjs/tsconfig": "^1.1.0",
         "@types/cheerio": "^0.22.1",
+        "@types/jsonwebtoken": "^9.0.2",
         "@types/mocha": "^10.0.1",
         "cheerio": "^1.0.0-rc.2",
         "egg-bin": "^5.9.0",

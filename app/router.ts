@@ -7,4 +7,5 @@ export default (app: Application) => {
   router.get('/api/users/:id', controller.usersController.getUserById);
   router.post('/api/users/create', controller.usersController.createUserByEmail);
   router.post('/api/users/login', controller.usersController.login);
+  router.post('/api/users/sendPhoneCode', controller.usersController.sendValidateCode);
 };

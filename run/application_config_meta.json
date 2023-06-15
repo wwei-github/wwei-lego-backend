@@ -60,6 +60,18 @@
   "bcrypt": {
     "saltRounds": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts"
   },
+  "redis": {
+    "client": {
+      "port": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+      "host": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+      "password": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts",
+      "db": "/Users/wwei/Documents/my_github/wwei-lego-backend/config/config.default.ts"
+    },
+    "default": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-redis@2.5.0/node_modules/egg-redis/config/config.default.js",
+    "app": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-redis@2.5.0/node_modules/egg-redis/config/config.default.js",
+    "agent": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-redis@2.5.0/node_modules/egg-redis/config/config.default.js",
+    "supportTimeCommand": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg-redis@2.5.0/node_modules/egg-redis/config/config.default.js"
+  },
   "mongoose": {
     "clients": {
       "mongodb_1": {
@@ -217,6 +229,7 @@
       "egg-bcrypt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-jwt": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-mongoose": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
+      "egg-redis": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-scripts": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-validate": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
       "egg-view-nunjucks": "/Users/wwei/Documents/my_github/wwei-lego-backend/node_modules/.pnpm/egg@3.11.0/node_modules/egg/config/config.default.js",
