@@ -1,4 +1,4 @@
 node_modules
 test
-logs
-run
+logs/**/*.log.*
+run/*.json

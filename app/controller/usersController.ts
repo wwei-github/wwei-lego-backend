@@ -25,6 +25,10 @@ export const userErrorMessage = {
     error: 101005,
     message: '请勿频繁发送短信',
   },
+  codeValidateError: {
+    error: 101006,
+    message: '验证码错误',
+  },
 };
 
 export default class UsersController extends Controller {
@@ -77,7 +81,7 @@ export default class UsersController extends Controller {
     return ctx.helper.error({ ctx, errorType: 'userIdIsNullError' });
   }
 
-  public async login() {
+  public async loginByPwd() {
     const { ctx, app } = this;
     const body = ctx.request.body;
 
@@ -103,33 +107,69 @@ export default class UsersController extends Controller {
     return ctx.helper.error({ ctx, errorType: 'userInfoError' });
   }
 
-  validateUserPhone() {
+  validateUserPhone(phone) {
     const { ctx, app } = this;
     const validation = {
-      userPhone: {
+      validPhone: {
         require: true,
         type: 'string',
         format:
           /^(?:(?:\+|00)86)?1(?:(?:3[\d])|(?:4[5-79])|(?:5[0-35-9])|(?:6[5-7])|(?:7[0-8])|(?:8[\d])|(?:9[1589]))\d{8}$/,
       },
     };
-    return app.validator.validate(validation, ctx.request.query);
+    return app.validator.validate(validation, { validPhone: phone });
   }
 
   public async sendValidateCode() {
     const { ctx, app } = this;
     const { userPhone } = ctx.request.query;
-    const error = this.validateUserPhone();
+    const error = this.validateUserPhone(userPhone);
     if (error) {
       return ctx.helper.error({ ctx, errorType: 'phoneValidateError' });
     }
     const code = Math.floor(Math.random() * 9000 + 1000);
-    const codeKey = `${userPhone}-validate-code`;
+    const codeKey = `phoneVeriCode-${userPhone}`;
     const isAlreadySend = await app.redis.get(codeKey);
     if (isAlreadySend) {
       return ctx.helper.error({ ctx, errorType: 'sendCodeIsMoreError' });
     }
-    app.redis.set(codeKey, code, 'ex', 60);
-    return ctx.helper.success({ ctx, res: { userPhone, code } });
+    if (app.config.env == 'prod') {
+      // 生产发送短信服务
+    }
+    app.redis.set(codeKey, code, 'ex', 60 * 2);
+    return ctx.helper.success({ ctx, res: app.config.env == 'local' ? { userPhone, code } : null });
+  }
+
+  public async loginByPhoneCode() {
+    const { ctx, app } = this;
+    const { phone, code } = ctx.request.body;
+    const error = this.validateUserPhone(phone);
+    if (error) {
+      return ctx.helper.error({ ctx, errorType: 'phoneValidateError' });
+    }
+
+    const preCode = await app.redis.get(`phoneVeriCode-${phone}`);
+    if (code !== preCode) {
+      return ctx.helper.error({ ctx, errorType: 'codeValidateError' });
+    }
+
+    const token = await ctx.service.userService.loginUserByPhone(phone);
+    return ctx.helper.success({ ctx, res: { token } });
+  }
+
+  async loginOauthByGitee() {
+    const { ctx, app } = this;
+    const { clientId, redirectUrl } = app.config.giteeOauthConfig;
+    ctx.redirect(
+      `https://gitee.com/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUrl}&response_type=code`
+    );
+  }
+  async loginGetOauthToken() {
+    const { ctx, app, service } = this;
+    const { code } = ctx.request.query;
+    const token = await service.userService.getAccessToken(code);
+    if (token) {
+      return ctx.helper.success({ ctx, res: { token } });
+    }
   }
 }

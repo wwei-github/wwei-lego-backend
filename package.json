@@ -20,6 +20,7 @@
     "clean": "tsc -b --clean"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "egg": "^3.11.0",
     "egg-bcrypt": "^1.1.0",
     "egg-jwt": "^3.1.7",
