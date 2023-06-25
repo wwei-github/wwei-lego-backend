@@ -11,7 +11,9 @@ export interface UserProps {
   phoneNumber?: string;
   createdAt?: Date;
   updatedAt?: Date;
-  registerType: 'email' | 'phone';
+  registerType: 'email' | 'phone' | 'oauth';
+  oauthID?: string;
+  oauthType?: 'gitee';
 }
 
 function initUsersModel(app: Application) {
@@ -29,6 +31,8 @@ function initUsersModel(app: Application) {
       picture: { type: String },
       phoneNumber: { type: String },
       registerType: { type: String, default: 'email' },
+      oauthID: { type: String },
+      oauthType: { type: String },
     },
     {
       collection: 'users',
@@ -46,7 +50,7 @@ function initUsersModel(app: Application) {
     id: 'users_id_counter',
   });
 
-  return conn.model('Users', UserSchema);
+  return conn.model<UserProps>('Users', UserSchema);
 }
 
 export default initUsersModel;

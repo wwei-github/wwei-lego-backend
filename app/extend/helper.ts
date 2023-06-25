@@ -1,14 +1,15 @@
 import type { Context } from 'egg';
-import { userErrorMessage } from '../controller/usersController';
+import { ErrorMessageType, allErrorMessage } from '../errors';
 
 interface SuccessOptions {
   ctx: Context;
   res: any;
   message?: string;
 }
+
 interface ErrorOptions {
   ctx: Context;
-  errorType: keyof typeof userErrorMessage;
+  errorType: ErrorMessageType;
 }
 
 export default {
@@ -22,8 +23,8 @@ export default {
   },
   error({ ctx, errorType }: ErrorOptions) {
     ctx.body = {
-      error: userErrorMessage[errorType].error,
-      message: userErrorMessage[errorType].message || '请求失败',
+      error: allErrorMessage[errorType].error,
+      message: allErrorMessage[errorType].message || '请求失败',
     };
     ctx.status = 200;
   },

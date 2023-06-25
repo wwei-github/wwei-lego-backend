@@ -4,9 +4,11 @@
 
 import 'egg';
 import ExportUsers from '../../../app/model/Users';
+import ExportWorks from '../../../app/model/Works';
 
 declare module 'egg' {
   interface IModel {
     Users: ReturnType<typeof ExportUsers>;
+    Works: ReturnType<typeof ExportWorks>;
   }
 }

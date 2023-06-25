@@ -1,6 +1,13 @@
 import { Service } from 'egg';
 import { UserProps } from '../model/Users';
 
+interface GiteeUserType {
+  id: number;
+  name: string;
+  email: string;
+  avatar_url: string;
+}
+
 export class UserService extends Service {
   public async queryUsers() {
     return await this.app.model.Users.find().exec();
@@ -25,7 +32,7 @@ export class UserService extends Service {
   }
   public async loginUserByPhone(phone: string) {
     const { ctx, app } = this;
-    const user = this.findUserByUsername(phone);
+    let user = await this.findUserByUsername(phone);
     if (!user) {
       const newUser: Partial<UserProps> = {
         username: phone,
@@ -33,10 +40,10 @@ export class UserService extends Service {
         phoneNumber: phone,
         registerType: 'phone',
       };
-      await ctx.model.Users.create(newUser);
+      user = await ctx.model.Users.create(newUser);
     }
 
-    const token = app.jwt.sign({ username: phone }, app.config.jwt.secret);
+    const token = app.jwt.sign({ username: phone, _id: user?._id }, app.config.jwt.secret);
     return token;
   }
 
@@ -55,7 +62,35 @@ export class UserService extends Service {
         client_secret: clientSecret,
       },
     });
+    return data.access_token;
+  }
+  public async getGtieeUserInfo(token: string) {
+    const { ctx, app } = this;
+    const { giteeUserInfoApi } = app.config.giteeOauthConfig;
+    const { data } = await ctx.curl<GiteeUserType>(`${giteeUserInfoApi}?access_token=${token}`, {
+      dataType: 'jsonp',
+    });
     return data;
+  }
+  public async loginByGitee(code: string) {
+    const { ctx, app } = this;
+    const access_token = await this.getAccessToken(code);
+    const { id, name, email, avatar_url } = await this.getGtieeUserInfo(access_token);
+    const userName = `Gitee-${id}`;
+    let userInfo = await this.findUserByUsername(userName);
+    if (!userInfo) {
+      const newUser: Partial<UserProps> = {
+        username: userName,
+        nickName: name,
+        picture: avatar_url,
+        email,
+        oauthID: id,
+        oauthType: 'gitee',
+      };
+      userInfo = await ctx.model.Users.create(newUser);
+    }
+    const token = app.jwt.sign({ username: userName, _id: userInfo?._id }, app.config.jwt.secret);
+    return token;
   }
 }
 

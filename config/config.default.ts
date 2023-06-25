@@ -18,6 +18,12 @@ export default (appInfo: EggAppInfo) => {
     // domainWhiteList: ['http://127.0.0.1:7002', 'https://gitee.com/'],
   };
 
+  // 跨域配置
+  config.cors = {
+    origin: 'https://localhost:8000',
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+
   config.bcrypt = {
     saltRounds: 10,
   };
@@ -50,6 +56,7 @@ export default (appInfo: EggAppInfo) => {
     clientSecret: process.env.GITEE_OAUTH_CLIENT_SECRET,
     redirectUrl: 'http://localhost:7002/api/users/loginGetOauthToken',
     authUrl: 'https://gitee.com/oauth/token?grant_type=authorization_code',
+    giteeUserInfoApi: 'https://gitee.com/api/v5/user',
   };
   // add your special config in here
   const bizConfig = {
