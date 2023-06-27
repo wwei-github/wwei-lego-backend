@@ -16,4 +16,7 @@ export default (app: Application) => {
 
   // works
   router.post('/api/works', jwtMiddleware, controller.worksController.createEmptyWorkTemplate);
+  router.get('/api/works/list', jwtMiddleware, controller.worksController.queryList);
+  router.post('/api/works/update/:id', jwtMiddleware, controller.worksController.update);
+  router.get('/api/works/delete/:id', jwtMiddleware, controller.worksController.delete);
 };
