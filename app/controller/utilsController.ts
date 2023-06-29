@@ -1,6 +1,7 @@
+import { createWriteStream, createReadStream } from 'fs';
+import { pipeline } from 'stream/promises';
 import { Controller } from 'egg';
 import sharp from 'sharp';
-import { createReadStream, createWriteStream } from 'fs';
 import { parse, join, extname } from 'path';
 import { nanoid } from 'nanoid';
 
@@ -47,26 +48,25 @@ export default class UtilsController extends Controller {
     const writeThumbnailFileStream = createWriteStream(saveFileThumbnailPath);
 
     // promise 封装流
-    const fileSaveStream = new Promise((resolve, reject) => {
-      readFileStream.pipe(writeFileStream).on('finish', resolve).on('error', reject);
-    });
-
+    const fileSaveStream = pipeline(readFileStream, writeFileStream);
     const transformFile = sharp().resize({ width: 300 });
-    const fileThumbnailSaveStream = new Promise((resolve, reject) => {
-      readFileStream
-        .pipe(transformFile)
-        .pipe(writeThumbnailFileStream)
-        .on('finish', resolve)
-        .on('error', reject);
-    });
+    const fileThumbnailSaveStream = pipeline(
+      readFileStream,
+      transformFile,
+      writeThumbnailFileStream
+    );
 
-    await Promise.all([fileSaveStream, fileThumbnailSaveStream]);
-    ctx.helper.success({
-      ctx,
-      res: {
-        url: this.replacePath(saveFilePath),
-        imgThumbnailUrl: this.replacePath(saveFileThumbnailPath),
-      },
-    });
+    try {
+      await Promise.all([fileSaveStream, fileThumbnailSaveStream]);
+      ctx.helper.success({
+        ctx,
+        res: {
+          url: this.replacePath(saveFilePath),
+          imgThumbnailUrl: this.replacePath(saveFileThumbnailPath),
+        },
+      });
+    } catch (e) {
+      ctx.helper.error({ ctx, errorType: 'uploadFileError' });
+    }
   }
 }

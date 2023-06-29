@@ -63,6 +63,9 @@ devDependencies:
   '@types/mocha':
     specifier: ^10.0.1
     version: 10.0.1
+  '@types/node':
+    specifier: ^20.3.2
+    version: 20.3.2
   '@types/sharp':
     specifier: ^0.32.0
     version: 0.32.0
@@ -71,13 +74,13 @@ devDependencies:
     version: 1.0.0-rc.2
   egg-bin:
     specifier: ^5.9.0
-    version: 5.9.0(@types/node@20.2.5)(egg-mock@5.5.0)(typescript@4.9.4)
+    version: 5.9.0(@types/node@20.3.2)(egg-mock@5.5.0)(typescript@4.9.4)
   egg-mock:
     specifier: ^5.5.0
     version: 5.5.0
   egg-ts-helper:
     specifier: ^1.34.7
-    version: 1.34.7(@types/node@20.2.5)
+    version: 1.34.7(@types/node@20.3.2)
   eslint:
     specifier: ^8.31.0
     version: 8.31.0
@@ -537,20 +540,20 @@ packages:
   /@types/accepts@1.3.5:
     resolution: {integrity: sha512-jOdnI/3qTpHABjM5cx1Hc0sKsPoYCp+DP/GJRGtDlPd7fiV9oXGGIcjW/ZOxLIvjGz8MA+uMZI9metHlgqbgwQ==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/body-parser@1.19.2:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
       '@types/connect': 3.4.35
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/bson@4.0.5:
     resolution: {integrity: sha512-vVLwMUqhYJSQ/WKcE60eFqcyuWse5fGH+NMAXHuKrUAPoryq3ATxk5o4bgYNtg5aOM4APVg7Hnb3ASqUYG0PKg==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/cheerio@0.22.1:
@@ -560,7 +563,7 @@ packages:
   /@types/connect@3.4.35:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/content-disposition@0.5.5:
@@ -577,7 +580,7 @@ packages:
       '@types/connect': 3.4.35
       '@types/express': 4.17.17
       '@types/keygrip': 1.0.2
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/dargs@5.1.0:
@@ -587,7 +590,7 @@ packages:
   /@types/depd@1.1.32:
     resolution: {integrity: sha512-kB2cpXs3A0TGWl4a4h74yIwvclYZUTW6Irpee/3Dc1s4Cr5rGPHtpGPpBBpEV1MaKH5z/oul+57oDkEkeRXRnw==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/empower-core@1.2.1:
@@ -604,7 +607,7 @@ packages:
   /@types/express-serve-static-core@4.17.35:
     resolution: {integrity: sha512-wALWQwrgiB2AWTT91CB62b6Yt0sNHpznUXeZEcnPU3DRdlDIz74x8Qg1UUYKSVFi+va5vKOLYRBI1bRKiLLKIg==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
       '@types/qs': 6.9.7
       '@types/range-parser': 1.2.4
       '@types/send': 0.17.1
@@ -623,7 +626,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: true
 
   /@types/http-assert@1.5.3:
@@ -637,7 +640,7 @@ packages:
   /@types/ioredis@4.28.10:
     resolution: {integrity: sha512-69LyhUgrXdgcNDv7ogs1qXZomnfOEnSmrmMFqKgt1XMJxmoOSG/u3wYy13yACIfKuMJ8IhKgHafDO3sx19zVQQ==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/istanbul-lib-coverage@2.0.4:
@@ -655,7 +658,7 @@ packages:
   /@types/jsonwebtoken@9.0.2:
     resolution: {integrity: sha512-drE6uz7QBKq1fYqqoFKTDRdFCPHd5TCub75BM+D+cMx7NU9hUz7SESLfC2fSCXVFMO5Yj8sOWHuGqPgjc+fz0Q==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: true
 
   /@types/keygrip@1.0.2:
@@ -684,7 +687,7 @@ packages:
       '@types/http-errors': 2.0.1
       '@types/keygrip': 1.0.2
       '@types/koa-compose': 3.2.5
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/mime@1.3.2:
@@ -707,7 +710,7 @@ packages:
     resolution: {integrity: sha512-WcdpPJCakFzcWWD9juKoZbRtQxKIMYF/JIAM4JrNHrMcnJL6/a2NWjXxW7fo9hxboxxkg+icff8d7+WIEvKgYQ==}
     dependencies:
       '@types/bson': 4.0.5
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/mongoose@5.11.97:
@@ -726,8 +729,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: false
 
-  /@types/node@20.2.5:
-    resolution: {integrity: sha512-JJulVEQXmiY9Px5axXHeYGLSjhkZEnD+MDPDGbCbIAbMslkKwmygtZFy1X6s/075Yo94sf8GuSlFfPzysQrWZQ==}
+  /@types/node@20.3.2:
+    resolution: {integrity: sha512-vOBLVQeCQfIcF/2Y7eKFTqrMnizK5lRNQ7ykML/5RuwVXVWxYkgwS7xbt4B6fKCUPgbSL5FSsjHQpaGQP/dQmw==}
 
   /@types/power-assert-formatter@1.4.30:
     resolution: {integrity: sha512-QpLIRAdxW9dgGanSJc18RL1J8IYYHRarrkC2fuXxtBFC37PPcfquJiVzj12j5WR3LbVyK4n2FcRBZ11JckjXyA==}
@@ -756,14 +759,14 @@ packages:
     resolution: {integrity: sha512-Cwo8LE/0rnvX7kIIa3QHCkcuF21c05Ayb0ZfxPiv0W8VRiZiNW/WuRupHKpqqGVGf7SUA44QSOUKaEd9lIrd/Q==}
     dependencies:
       '@types/mime': 1.3.2
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/serve-static@1.15.1:
     resolution: {integrity: sha512-NUo5XNiAdULrJENtJXZZ3fHtfMolzZwczzBbnAeBbqBwG+LaG6YaJtuwzwGSQZ2wsCrxjEhNNjAkKigy3n8teQ==}
     dependencies:
       '@types/mime': 3.0.1
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: false
 
   /@types/sharp@0.32.0:
@@ -777,7 +780,7 @@ packages:
     resolution: {integrity: sha512-LOWgpacIV8GHhrsQU+QMZuomfqXiqzz3ILLkCtKx3Us6AmomFViuzKT9D693QTKgyut2oCytMG8/efOop+DB+w==}
     dependencies:
       '@types/cookiejar': 2.1.2
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: true
 
   /@types/supertest@2.0.12:
@@ -793,7 +796,7 @@ packages:
   /@types/whatwg-url@8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
       '@types/webidl-conversions': 7.0.0
     dev: false
 
@@ -3105,7 +3108,7 @@ packages:
       bcryptjs: 2.4.3
     dev: false
 
-  /egg-bin@5.9.0(@types/node@20.2.5)(egg-mock@5.5.0)(typescript@4.9.4):
+  /egg-bin@5.9.0(@types/node@20.3.2)(egg-mock@5.5.0)(typescript@4.9.4):
     resolution: {integrity: sha512-la3p8dmsUXWS1QjKx2epRxtrdkFWOzVlc4g6cMXMOFUn55F0hESt5+p+lGJMrXusCY6Y0SGwBzMeE102I0EPVQ==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
@@ -3122,7 +3125,7 @@ packages:
       debug: 4.3.4(supports-color@8.1.1)
       detect-port: 1.5.1
       egg-mock: 5.5.0
-      egg-ts-helper: 1.34.7(@types/node@20.2.5)
+      egg-ts-helper: 1.34.7(@types/node@20.3.2)
       egg-utils: 2.5.0
       globby: 11.1.0
       inspector-proxy: 1.2.3
@@ -3133,7 +3136,7 @@ packages:
       semver: 7.5.1
       source-map-support: 0.5.21
       test: 3.3.0
-      ts-node: 10.9.1(@types/node@20.2.5)(typescript@4.9.4)
+      ts-node: 10.9.1(@types/node@20.3.2)(typescript@4.9.4)
       tsconfig-paths: 4.2.0
       ypkgfiles: 1.6.0
     transitivePeerDependencies:
@@ -3450,7 +3453,7 @@ packages:
       - supports-color
     dev: false
 
-  /egg-ts-helper@1.34.7(@types/node@20.2.5):
+  /egg-ts-helper@1.34.7(@types/node@20.3.2):
     resolution: {integrity: sha512-gbWJAwPhvTJL2iqpK4kNpTiGR+vKfAGhsBpFF9U4GotzZPJj8M6/2pqqIqvicz24BijxxtqalsNIux1u6HFTUA==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
@@ -3462,7 +3465,7 @@ packages:
       enquirer: 2.3.6
       globby: 11.1.0
       json5: 2.2.3
-      ts-node: 10.9.1(@types/node@20.2.5)(typescript@4.9.4)
+      ts-node: 10.9.1(@types/node@20.3.2)(typescript@4.9.4)
       tslib: 2.5.3
       typescript: 4.9.4
       yn: 3.1.1
@@ -6659,7 +6662,7 @@ packages:
   /parse5@3.0.3:
     resolution: {integrity: sha512-rgO9Zg5LLLkfJF9E6CCmXlSE4UVceloys8JrFqCcHloC3usd/kJCyPDwH2SOlzix2j3xaP9sUX3e8+kvkuleAA==}
     dependencies:
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
     dev: true
 
   /parseurl@1.3.3:
@@ -8107,7 +8110,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-node@10.9.1(@types/node@20.2.5)(typescript@4.9.4):
+  /ts-node@10.9.1(@types/node@20.3.2)(typescript@4.9.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -8126,7 +8129,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.2.5
+      '@types/node': 20.3.2
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
