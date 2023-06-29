@@ -44,6 +44,19 @@ class WorkService extends Service {
       count,
     };
   }
+
+  async publish(id: string, isTemplate: boolean = false) {
+    const { ctx, app } = this;
+    const { H5BaseUrl } = app.config;
+    const data: Partial<WorkProps> = {
+      status: 2,
+      lastPublishedDate: new Date(),
+      ...(isTemplate && { isTemplate }),
+    };
+    const res = await ctx.model.Works.findOneAndUpdate({ id }, data, { new: true });
+    if (!res) return null;
+    return `${H5BaseUrl}/p/${res.id}-${res?.uuid}`;
+  }
 }
 
 export default WorkService;

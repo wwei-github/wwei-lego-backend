@@ -120,4 +120,26 @@ export default class WorksController extends Controller {
       return ctx.helper.error({ ctx, errorType: 'deleteWorkErrorMessage' });
     }
   }
+
+  @checkPermission('Works', 'workNoPermissionErrorMessage')
+  async publish(isTemplate: boolean) {
+    const { ctx } = this;
+    try {
+      const url = await ctx.service.workService.publish(ctx.params.id, isTemplate);
+      if (url) {
+        return ctx.helper.success({ ctx, res: { url } });
+      } else {
+        return ctx.helper.error({ ctx, errorType: 'workPublishErrorMessage' });
+      }
+    } catch (err) {
+      return ctx.helper.error({ ctx, errorType: 'workPublishErrorMessage' });
+    }
+  }
+
+  async publishTemplate() {
+    await this.publish(true);
+  }
+  async publishWork() {
+    await this.publish(false);
+  }
 }

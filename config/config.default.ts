@@ -1,4 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
+import { join } from 'path';
 import 'dotenv/config';
 
 export default (appInfo: EggAppInfo) => {
@@ -51,6 +52,15 @@ export default (appInfo: EggAppInfo) => {
     secret: process.env.JWT_SECRET,
   };
 
+  config.static = {
+    dir: [
+      {
+        prefix: '/uploads',
+        dir: join(appInfo.baseDir, 'uploads'),
+      },
+    ],
+  };
+
   const giteeOauthConfig = {
     clientId: process.env.GITEE_OAUTH_CLIENT_ID,
     clientSecret: process.env.GITEE_OAUTH_CLIENT_SECRET,
@@ -62,6 +72,7 @@ export default (appInfo: EggAppInfo) => {
   const bizConfig = {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
     giteeOauthConfig,
+    H5BaseUrl: 'http://localhost:8000',
   };
 
   // the return config will combines to EggAppConfig

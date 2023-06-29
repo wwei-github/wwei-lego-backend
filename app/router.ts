@@ -19,4 +19,13 @@ export default (app: Application) => {
   router.get('/api/works/list', jwtMiddleware, controller.worksController.queryList);
   router.post('/api/works/update/:id', jwtMiddleware, controller.worksController.update);
   router.get('/api/works/delete/:id', jwtMiddleware, controller.worksController.delete);
+  router.get(
+    '/api/works/publishTemplate/:id',
+    jwtMiddleware,
+    controller.worksController.publishTemplate
+  );
+  router.get('/api/works/publishWork/:id', jwtMiddleware, controller.worksController.publishWork);
+
+  // 上传
+  router.post('/api/utils/upload', controller.utilsController.uploadFileByStream);
 };

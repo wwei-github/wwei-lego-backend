@@ -23,4 +23,8 @@ export const worksErrorMessage = {
     error: 102005,
     message: '无权限对该模版进行操作',
   },
+  workPublishErrorMessage: {
+    error: 102006,
+    message: '模版发布失败',
+  },
 };
