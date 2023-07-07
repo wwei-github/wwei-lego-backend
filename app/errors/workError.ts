@@ -27,4 +27,8 @@ export const worksErrorMessage = {
     error: 102006,
     message: '模版发布失败',
   },
+  findWorkErrorMessage: {
+    error: 102007,
+    message: '没有找到该模板信息',
+  },
 };

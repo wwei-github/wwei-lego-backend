@@ -10,6 +10,7 @@ interface SuccessOptions {
 interface ErrorOptions {
   ctx: Context;
   errorType: ErrorMessageType;
+  message?: string;
 }
 
 export default {
@@ -21,10 +22,11 @@ export default {
     };
     ctx.status = 200;
   },
-  error({ ctx, errorType }: ErrorOptions) {
+  error({ ctx, errorType, message }: ErrorOptions) {
     ctx.body = {
       error: allErrorMessage[errorType].error,
-      message: allErrorMessage[errorType].message || '请求失败',
+      message: allErrorMessage[errorType].message,
+      errorInfo: message || '请求失败',
     };
     ctx.status = 200;
   },

@@ -4,11 +4,11 @@
 
 import 'egg';
 import ExportErrorMiddleware from '../../../app/middleware/errorMiddleware';
-import ExportJwt from '../../../app/middleware/jwt';
+import ExportJwtCustom from '../../../app/middleware/jwtCustom';
 
 declare module 'egg' {
   interface IMiddleware {
     errorMiddleware: typeof ExportErrorMiddleware;
-    jwt: typeof ExportJwt;
+    jwtCustom: typeof ExportJwtCustom;
   }
 }

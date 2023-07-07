@@ -1,15 +1,18 @@
 // app.ts
+import { Application } from 'egg';
 import { IBoot } from 'egg';
 
 export default class FooBoot implements IBoot {
-  // constructor(app: Application) {
-  //   this.app = app;
-  // }
+  app: Application;
+  constructor(app: Application) {
+    this.app = app;
+  }
 
   configWillLoad() {
     // Ready to call configDidLoad,
     // Config, plugin files are referred,
     // this is the last chance to modify the config.
+    this.app.config.coreMiddleware.push('errorMiddleware');
   }
 
   configDidLoad() {

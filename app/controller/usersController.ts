@@ -121,8 +121,8 @@ export default class UsersController extends Controller {
       const token = await service.userService.loginByGitee(code);
       await ctx.render('loginSuccess.nj', { token });
       // return ctx.helper.success({ ctx, res: { token } });
-    } catch (e) {
-      ctx.helper.error({ ctx, errorType: 'giteeOauthLoginError' });
+    } catch (e: any) {
+      ctx.helper.error({ ctx, errorType: 'giteeOauthLoginError', message: e.message });
     }
   }
 }

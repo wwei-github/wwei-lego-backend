@@ -17,6 +17,12 @@ export interface IndexCondition {
   find?: Record<string, any>; // 查询条件
 }
 
+export interface IndexDetailCondition {
+  find?: Record<string, any>; // 查询条件
+  select?: string | string[];
+  populate?: PopulateOptions | (string | PopulateOptions)[]; // 关联的其他集合信息
+}
+
 export default class WorksController extends Controller {
   @validateRuleError(validateCreateRules, 'validateErrorMessage')
   async createEmptyWorkTemplate() {
@@ -122,6 +128,34 @@ export default class WorksController extends Controller {
   }
 
   @checkPermission('Works', 'workNoPermissionErrorMessage')
+  async detail() {
+    const { ctx } = this;
+    const { id } = ctx.params;
+    const detailCondition: IndexDetailCondition = {
+      find: { id },
+      select: [
+        'id',
+        'author',
+        'copiedCount',
+        'coverImg',
+        'desc',
+        'title',
+        'user',
+        'isHot',
+        'createdAt',
+        'content',
+      ],
+      populate: { path: 'user', select: 'username nickName picture' },
+    };
+    try {
+      const res = await ctx.service.workService.getDetail(detailCondition);
+      return ctx.helper.success({ ctx, res });
+    } catch (err) {
+      return ctx.helper.error({ ctx, errorType: 'findWorkErrorMessage' });
+    }
+  }
+
+  @checkPermission('Works', 'workNoPermissionErrorMessage', { action: 'publish' })
   async publish(isTemplate: boolean) {
     const { ctx } = this;
     try {

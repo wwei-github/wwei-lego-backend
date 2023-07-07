@@ -10,7 +10,7 @@
     <h2>授权成功，2S后自动跳转</h2>
   </body>
   <script>
-    window.ready = () => {
+    window.onload = () => {
       setTimeout(() => {
         window.opener.postMessage(
           { token: '{{token}}', from: 'giteeOauth' },

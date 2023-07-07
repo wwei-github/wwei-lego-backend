@@ -10,7 +10,14 @@ export default (appInfo: EggAppInfo) => {
   config.keys = appInfo.name + '_1685973644012_9183';
 
   // add your egg config in here
-  config.middleware = ['errorMiddleware'];
+  // config.middleware = ['errorMiddleware'];
+
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.nj': 'nunjucks',
+    },
+  };
 
   config.security = {
     csrf: {
@@ -49,7 +56,9 @@ export default (appInfo: EggAppInfo) => {
   };
 
   config.jwt = {
+    enable: true,
     secret: process.env.JWT_SECRET,
+    match: ['/api/users/detail', '/api/works', '/api/utils/upload-img'],
   };
 
   config.static = {
@@ -59,6 +68,21 @@ export default (appInfo: EggAppInfo) => {
         dir: join(appInfo.baseDir, 'uploads'),
       },
     ],
+  };
+
+  config.oss = {
+    client: {
+      accessKeyId: process.env.ALIYUN_ACCESSKEY_ID || '',
+      accessKeySecret: process.env.ALIYUN_ACCESSKEY_SECRET || '',
+      bucket: 'wwei-files',
+      endpoint: 'https://oss-cn-shanghai.aliyuncs.com',
+      timeout: '60s',
+    },
+  };
+
+  config.multipart = {
+    whitelist: ['.jpg', '.webp', '.png', '.jpeg'],
+    fileSize: '1000kb',
   };
 
   const giteeOauthConfig = {

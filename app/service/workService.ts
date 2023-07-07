@@ -1,7 +1,7 @@
 import { Service } from 'egg';
 import { WorkProps } from '../model/Works';
 import { nanoid } from 'nanoid';
-import { IndexCondition } from '../controller/worksController';
+import { IndexCondition, IndexDetailCondition } from '../controller/worksController';
 
 class WorkService extends Service {
   async createWork(data) {
@@ -15,6 +15,12 @@ class WorkService extends Service {
       author: username,
     };
     const result = await ctx.model.Works.create(newWork);
+    return result;
+  }
+  async getDetail(optionCondition: IndexDetailCondition) {
+    const { ctx } = this;
+    const { find = {}, select = '', populate = [] } = optionCondition;
+    const result = await ctx.model.Works.findOne(find).select(select).populate(populate).lean();
     return result;
   }
 

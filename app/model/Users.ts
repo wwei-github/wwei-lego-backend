@@ -14,6 +14,7 @@ export interface UserProps {
   registerType: 'email' | 'phone' | 'oauth';
   oauthID?: string;
   oauthType?: 'gitee';
+  role?: 'admin' | 'normal';
 }
 
 function initUsersModel(app: Application) {
@@ -33,6 +34,7 @@ function initUsersModel(app: Application) {
       registerType: { type: String, default: 'email' },
       oauthID: { type: String },
       oauthType: { type: String },
+      role: { type: String, default: 'normal' },
     },
     {
       collection: 'users',
