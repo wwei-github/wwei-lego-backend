@@ -3,3 +3,4 @@ test
 logs/
 run/
 typings/**
+.env
