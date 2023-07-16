@@ -43,7 +43,9 @@ export class UserService extends Service {
       user = await ctx.model.Users.create(newUser);
     }
 
-    const token = app.jwt.sign({ username: phone, _id: user?._id }, app.config.jwt.secret);
+    const token = app.jwt.sign({ username: phone, _id: user?._id }, app.config.jwt.secret, {
+      expiresIn: app.config.jwtExpires,
+    });
     return token;
   }
 
@@ -89,7 +91,9 @@ export class UserService extends Service {
       };
       userInfo = await ctx.model.Users.create(newUser);
     }
-    const token = app.jwt.sign({ username: userName, _id: userInfo?._id }, app.config.jwt.secret);
+    const token = app.jwt.sign({ username: userName, _id: userInfo?._id }, app.config.jwt.secret, {
+      expiresIn: app.config.jwtExpires,
+    });
     return token;
   }
 }

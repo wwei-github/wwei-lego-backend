@@ -23,14 +23,14 @@ export default (appInfo: EggAppInfo) => {
     csrf: {
       enable: false,
     },
-    // domainWhiteList: ['http://127.0.0.1:7002', 'https://gitee.com/'],
+    domainWhiteList: ['http://127.0.0.1:7002', 'https://gitee.com/', 'https://localhost:8000'],
   };
 
   // 跨域配置
-  config.cors = {
-    origin: 'https://localhost:8000',
-    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
-  };
+  // config.cors = {
+  //   origin: 'https://localhost:8000',
+  //   allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  // };
 
   config.bcrypt = {
     saltRounds: 10,
@@ -97,6 +97,7 @@ export default (appInfo: EggAppInfo) => {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
     giteeOauthConfig,
     H5BaseUrl: 'http://localhost:8000',
+    jwtExpires: '1h',
   };
 
   // the return config will combines to EggAppConfig

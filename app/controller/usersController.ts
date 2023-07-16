@@ -19,7 +19,7 @@ export default class UsersController extends Controller {
     const { ctx } = this;
     try {
       const data = await this.service.userService.queryUsers();
-      ctx.helper.success({ ctx, res: ctx.state.user, message: 'success' });
+      ctx.helper.success({ ctx, res: data, message: 'success' });
     } catch (e) {
       this.logger.error(e);
       ctx.helper.error({ ctx, errorType: 'userInfoError' });
@@ -67,7 +67,7 @@ export default class UsersController extends Controller {
         { username: userInfo.username, _id: userInfo._id },
         app.config.jwt.secret,
         {
-          expiresIn: 60 * 60,
+          expiresIn: app.config.jwtExpires,
         }
       );
       return ctx.helper.success({ ctx, message: '登录成功', res: token });

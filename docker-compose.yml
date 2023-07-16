@@ -1,0 +1,30 @@
+version: '3'
+services:
+  lego-mongo:
+    image: mongo:4 
+    container_name: lego-mongo
+    volumes:
+      - '.docker-volumes/mongo/data:/data/db'
+      - '$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/'
+    ports: 
+      - 27017:27017
+    env_file:
+      - .env
+    # environment:
+    #   - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+    #   - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+    #   - MONGO_LEGODB_USERNAME=${MONGO_LEGODB_USERNAME}
+    #   - MONGO_LEGODB_PASSWORD=${MONGO_LEGODB_PASSWORD}
+    
+  lego-backend:
+    depends_on: 
+      - lego-mongo   
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    image: lego-backend
+    container_name: lego-backend
+    ports:
+      - 7001:7001
+    env_file:
+      - .env
