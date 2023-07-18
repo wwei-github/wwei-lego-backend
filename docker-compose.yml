@@ -1,24 +1,35 @@
 version: '3'
 services:
   lego-mongo:
-    image: mongo:4 
+    image: mongo
+    command: [--auth]
     container_name: lego-mongo
     volumes:
       - '.docker-volumes/mongo/data:/data/db'
       - '$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/'
     ports: 
-      - 27017:27017
+      - 27018:27017
     env_file:
       - .env
     # environment:
-    #   - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
-    #   - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
-    #   - MONGO_LEGODB_USERNAME=${MONGO_LEGODB_USERNAME}
-    #   - MONGO_LEGODB_PASSWORD=${MONGO_LEGODB_PASSWORD}
-    
+    #   - MONGO_INITDB_ROOT_USERNAME=**
+    #   - MONGO_INITDB_ROOT_PASSWORD=**
+    #   - MONGO_LEGODB_USERNAME=**
+    #   - MONGO_LEGODB_PASSWORD=**
+  lego-redis:
+    image: redis
+    # command 表示覆盖docker启动后默认执行的命令 >表示之前默认的命令
+    command: >
+      --requirepass ${REDIS_PASSWORD}
+    container_name: lego-redis
+    ports:
+      - 6378:6379
+    env_file:
+      .env
   lego-backend:
     depends_on: 
-      - lego-mongo   
+      - lego-mongo 
+      - lego-redis  
     build:
       context: .
       dockerfile: Dockerfile 

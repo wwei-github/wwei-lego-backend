@@ -4,24 +4,14 @@ export default () => {
   const config = {} as PowerPartial<EggAppConfig>;
 
   // redis mongoose 配置
-  // config.redis = {
-  //   client: {
-  //     port: process.env.REDIS_PORT ? Number(process.env.REDIS_PORT) : undefined, // Redis port
-  //     host: process.env.REDIS_HOST, // Redis host
-  //     password: process.env.REDIS_PASSWORD,
-  //     db: process.env.REDIS_DB ? Number(process.env.REDIS_DB) : undefined,
-  //   },
-  // };
-
-  // config.mongoose = {
-  //   clients: {
-  //     mongodb_1: {
-  //       url: process.env.MONGODB_URL || '',
-  //       options: {},
-  //       // mongoose global plugins, expected a function or an array of function and options
-  //     },
-  //   },
-  // };
+  config.redis = {
+    client: {
+      port: 6379, // Redis port
+      host: 'lego-redis', // Redis host
+      password: process.env.REDIS_PASSWORD,
+      db: process.env.REDIS_DB ? Number(process.env.REDIS_DB) : undefined,
+    },
+  };
 
   // 正式允许域名访问
   config.security = {
@@ -36,13 +26,14 @@ export default () => {
     redirectUrl: 'http://api.immoc-lego.com/api/users/loginGetOauthToken',
   };
 
+  console.log('MONGO_LEGODB_USERNAME', process.env.MONGO_LEGODB_USERNAME);
   config.mongoose = {
     clients: {
       mongodb_1: {
         url: 'mongodb://lego-mongo:27017/wwei-lego-database',
         options: {
-          user: process.env.MONGO_LEGODB_USERNAME,
-          pass: process.env.MONGO_LEGODB_PASSWORD,
+          user: process.env.MONGO_LEGODB_USERNAME || '',
+          pass: process.env.MONGO_LEGODB_PASSWORD || '',
         },
         // mongoose global plugins, expected a function or an array of function and options
       },

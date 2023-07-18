@@ -4,3 +4,4 @@ logs/
 run/
 typings/**
 .env
+.docker-volumes

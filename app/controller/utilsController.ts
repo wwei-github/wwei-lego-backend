@@ -32,7 +32,7 @@ export default class UtilsController extends Controller {
   }
 
   // async uploadFileByStream() {
-  //   const { ctx, app } = this;
+  //   const { ctx, app } = this ;
   //   // 获取文件流
   //   const readFileStream = await ctx.getFileStream();
   //   const ext = extname(readFileStream.filename);

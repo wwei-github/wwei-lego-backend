@@ -36,14 +36,14 @@ export default (appInfo: EggAppInfo) => {
     saltRounds: 10,
   };
 
-  config.redis = {
-    client: {
-      port: process.env.REDIS_PORT ? Number(process.env.REDIS_PORT) : undefined, // Redis port
-      host: process.env.REDIS_HOST, // Redis host
-      password: process.env.REDIS_PASSWORD,
-      db: process.env.REDIS_DB ? Number(process.env.REDIS_DB) : undefined,
-    },
-  };
+  // config.redis = {
+  //   client: {
+  //     port: process.env.REDIS_PORT ? Number(process.env.REDIS_PORT) : undefined, // Redis port
+  //     host: process.env.REDIS_HOST, // Redis host
+  //     password: process.env.REDIS_PASSWORD,
+  //     db: process.env.REDIS_DB ? Number(process.env.REDIS_DB) : undefined,
+  //   },
+  // };
 
   config.mongoose = {
     clients: {
